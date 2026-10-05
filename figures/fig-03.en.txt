@@ -1,0 +1,46 @@
+Keyword Matching vs Semantic Search in 4D
+Keyword Matching
+Vectorization phase
+Existing records in 4D
+Record 1
+Record 2
+Record 3
+Embedding Model
+No further preparation
+text → 4D.Vector
+needed for Keyword Search
+4D.Vector stored per record · 1536 dims
+Vec 1
+Vec 2
+Vec 3
+query phase
+query phase
+Query
+Query
+"robot automation machine"
+"robot automation machine"
+stored
+Tokenise
+Embedding Model
+vectors
+"robot" · "automation" · "machine"
+query → 4D.Vector
+Scan Records
+Similarity Function
+substring / index look-up per token
+cosineSimilarity() · dotSimilarity()
+euclideanDistance()
+Match
+No Match
+Exact Topic
+Synonym
+keyword found
+synonym / paraphrase
+high similarity
+no shared keyword
+"automated system" is missed
+"automated system" returned despite
+(no common keywords between
+zero common keywords between
+the query and the result)
+the query and the result

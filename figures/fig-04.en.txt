@@ -1,0 +1,10 @@
+Vector Space (Schematic)
+Unrelated
+"automated system"
+no shared keyword
+Query
+Loosely Related
+"robot automation machine"
+high similarity
+medium similarity
+low similarity
