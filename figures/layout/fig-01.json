@@ -74,6 +74,52 @@
    ],
    "align": "center",
    "scale": 1.1
+  },
+  {
+   "box": [
+    221,
+    138,
+    83,
+    38
+   ],
+   "angle": 21.6,
+   "center": [
+    261.5,
+    157.2
+   ],
+   "length": 94.2,
+   "thickness": 9.2,
+   "align": "center",
+   "fg": [
+    72,
+    72,
+    68,
+    255
+   ],
+   "erase_pad": 4
+  },
+  {
+   "box": [
+    418,
+    127,
+    76,
+    53
+   ],
+   "angle": -32.3,
+   "center": [
+    451.3,
+    150.5
+   ],
+   "length": 94.4,
+   "thickness": 8.5,
+   "align": "center",
+   "fg": [
+    72,
+    72,
+    68,
+    255
+   ],
+   "erase_pad": 4
   }
  ]
 }

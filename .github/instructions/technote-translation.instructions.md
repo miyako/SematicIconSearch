@@ -108,6 +108,8 @@ For each changed item:
 5. The text is drawn with the weight (`light`, `regular` or `bold`) and alignment (`center` or `left`).
 
 Overrides per item: `scale`, `size`, `weight`, `align`, `dx`, `dy`, `box`, `bg`, `fg`, `erase_pad`.
+Rotated labels (OCR does not find them; add them by hand): `angle` (degrees, counter-clockwise), `center`,
+`length` and `thickness` (inked extent along and across the baseline, px); `box` is then only used to sample colours.
 Per figure:
 - `"localize": false` copies the image unchanged (use it for screenshots)
 - `"replace": "fig-NN-<tgt>.png"` uses a ready-made image from `figures/`, keeping `width_pt`
