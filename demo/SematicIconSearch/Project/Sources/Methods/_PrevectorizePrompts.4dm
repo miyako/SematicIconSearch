@@ -9,13 +9,12 @@ var $embeddingAPI : cs:C1710.AIKit.OpenAIEmbeddingsAPI
 $embeddingAPI:=GetOpenAIEmbeddingAPI()
 
 If ($embeddingAPI=Null:C1517)
-	ALERT:C41("An OpenAI key is needed to perform semantic searchs.")
 	return 
 End if 
 
 // STEP#2: loop through the list of prompts to be pre-vectorized
 var $prompts : Collection
-$prompts:=["Art et musique"; "Transportation and Travel"; "Deportes y Ocio"]
+$prompts:=["Art et musique"; "Transportation and Travel"; "スポーツとレジャー"]
 
 var $promptEntity : cs:C1710.PromptEntity
 var $promptID : Integer

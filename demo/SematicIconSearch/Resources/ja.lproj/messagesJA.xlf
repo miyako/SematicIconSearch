@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="AlertMissingAIProvider" resname="AlertMissingAIProvider">
+				<source>Missing OpenAI API key. Copy Project/Sources/AIProviders.example.json to AIProviders.json in the same folder and set your API key, or add an OpenAI provider in the AI page of the Structure Settings.</source>
+				<target>OpenAI の API キーがありません。Project/Sources/AIProviders.example.json を同じフォルダーに AIProviders.json としてコピーして API キーを設定するか、ストラクチャー設定の「AI」ページで OpenAI のプロバイダーを追加してください。</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

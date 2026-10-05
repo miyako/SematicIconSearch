@@ -15,7 +15,6 @@ var $embeddingAPI : cs:C1710.AIKit.OpenAIEmbeddingsAPI
 $embeddingAPI:=GetOpenAIEmbeddingAPI()
 
 If ($embeddingAPI=Null:C1517)
-	ALERT:C41("An OpenAI key is needed to perform semantic searchs.")
 	return 
 End if 
 

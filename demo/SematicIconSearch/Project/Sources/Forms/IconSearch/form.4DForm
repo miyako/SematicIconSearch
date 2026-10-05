@@ -392,25 +392,6 @@
 					"height": 1,
 					"stroke": "#f1f5f9"
 				},
-				"btnConfigKey": {
-					"type": "button",
-					"text": "⌘  Configure OpenAI API key",
-					"top": 502,
-					"left": 16,
-					"width": 232,
-					"height": 28,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btnConfigKey.4dm",
-					"style": "regular",
-					"borderStyle": "dashed",
-					"stroke": "#0EA5E9",
-					"fill": "transparent",
-					"fontSize": 11,
-					"fontWeight": "normal",
-					"borderRadius": 8
-				},
 				"vertDivider": {
 					"type": "line",
 					"left": 264,
