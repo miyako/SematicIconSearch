@@ -2,7 +2,7 @@
 // Reads the OpenAI API key from Project/Sources/AIProviders.json, the 4D AIKit
 // provider settings file (gitignored, never committed). Copy AIProviders.example.json
 // to AIProviders.json in the same folder and set your own key, or use the AI page of
-// the Structure Settings (4D 21 R2 and later). The file is read as plain JSON, so this
+// the Structure Settings (4D 21 R3). The file is read as plain JSON, so this
 // also works on 4D 21 LTS. Uses the provider whose baseURL is api.openai.com, otherwise
 // the first provider that has an apiKey.
 

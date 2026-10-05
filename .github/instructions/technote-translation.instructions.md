@@ -92,6 +92,9 @@ monospace font for code instead of colours, `code.colors` can stay empty.
 - Other languages: agree on the style with the user, and set the fonts (`figure_fonts`) and the font stack in
   `style/style.css`.
 - Inline code (`` `name` ``) stays as is. Identifiers in prose that refer to code stay in their original form.
+- Translator's notes (where the localised demo differs from the original): only with the user's agreement, as a
+  `> **訳注**：…` blockquote after the paragraph concerned. It is the only allowed extra block in `src/<tgt>.md`;
+  it is styled by `blockquote` in `style/style.css`.
 
 ## Figure localisation (`tools/render_figures.py`)
 
