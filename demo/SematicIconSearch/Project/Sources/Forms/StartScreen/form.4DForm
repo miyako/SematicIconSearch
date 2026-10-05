@@ -331,7 +331,7 @@
 				"BtnDemo": {
 					"type": "button",
 					"text": ":xliff:StartScreen_BtnDemo",
-					"top": 347,
+					"top": 346,
 					"left": 412,
 					"width": 194,
 					"action": "Accept",
@@ -339,7 +339,6 @@
 					"focusable": false,
 					"defaultButton": true,
 					"fill": "#0ea5e9",
-					"stroke": "#0ea5e9",
 					"fontSize": 12,
 					"fontWeight": "bold",
 					"borderRadius": 8,
@@ -402,7 +401,7 @@
 			}
 		}
 	],
-	"geometryStamp": 1462,
+	"geometryStamp": 1464,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
