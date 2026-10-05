@@ -199,7 +199,7 @@
 				},
 				"valVersion": {
 					"type": "text",
-					"text": "4D 21R2+",
+					"text": "4D 21+",
 					"top": 286,
 					"left": 31,
 					"width": 100,

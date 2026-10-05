@@ -106,3 +106,6 @@ td:last-child, th:last-child { text-align: right; }
 /* Translator's notes (訳注) added in the translation only */
 blockquote { margin: 0.4em 0 0.8em; padding: 0.4em 0.8em; border-left: 3px solid #999; background: #f4f4f4; font-size: 9.5pt; }
 blockquote p { margin: 0; }
+
+/* Bare URLs may break anywhere (see build.py) */
+.url { word-break: break-all; }

@@ -183,7 +183,6 @@
 					"fontSize": 12,
 					"fontWeight": "bold",
 					"fill": "#0ea5e9",
-					"stroke": "#0EA5E9",
 					"borderRadius": 8,
 					"class": "default"
 				},

@@ -109,6 +109,10 @@ def to_html(md_text: str, toc_pages: dict, lang: str) -> str:
                    + (f"<figcaption>{m.group(1)}</figcaption>" if m.group(1) else "")
                    + "</figure>"),
         body)
+    # Let bare URLs break anywhere: an unbreakable URL in CJK text leaves wide gaps in justified lines.
+    body = "".join(part if part.startswith("<pre") else
+                   re.sub(r'(?<![="/])(https?://[^\s<>"（）()「」、。]+)', r'<span class="url">\1</span>', part)
+                   for part in re.split(r"(<pre.*?</pre>)", body, flags=re.S))
 
     titles = CFG["toc_title"]
     toc_title = titles.get(lang, titles.get("en", "Contents")) if isinstance(titles, dict) else titles
