@@ -137,7 +137,17 @@ def extract_body(doc):
     out = []
     cover = CFG["cover"]
     p1 = [it for it in line_items(doc[cover["page"] - 1]) if it["kind"] == "line" and it["text"].strip()]
-    title, *rest = (it["text"].strip() for it in p1[:cover["lines"]])
+    p1 = p1[:cover["lines"]]
+
+    def style(it):
+        s = next(s for s in it["spans"] if s["text"].strip())
+        return font_of(s), round(s["size"], 1)
+
+    n = 1  # a title that wraps onto several lines in the same style is one title
+    while n < len(p1) and style(p1[n]) == style(p1[0]):
+        n += 1
+    title = join_lines(it["text"] for it in p1[:n])
+    rest = [it["text"].strip() for it in p1[n:]]
     out.append(f"# {title}\n\n" + "".join(f"{r}\n\n" for r in rest).rstrip("\n") + "\n")
 
     figures = []
