@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="StartScreen" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="StartScreen_Badge" resname="StartScreen_Badge">
+				<source>TECH NOTE</source>
+				<target>TECH NOTE</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Wordmark" resname="StartScreen_Wordmark">
+				<source>SEMANTIC ICON SEARCH</source>
+				<target>SEMANTIC ICON SEARCH</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Eyebrow" resname="StartScreen_Eyebrow">
+				<source>HOW IT WORKS</source>
+				<target>HOW IT WORKS</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_DescTitle" resname="StartScreen_DescTitle">
+				<source>Semantic Search on Icons</source>
+				<target>Semantic Search on Icons</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_DescBody" resname="StartScreen_DescBody">
+				<source>This 4D application allows you to perform semantic search on a set of icons (the Material Design icons by Google, available at https://fonts.google.com/icons).  An OpenAI key will be needed in order to transform the text prompt into a vector.  An ORDA query will then retrieve the best vector matches and display a list of icons ranked by similarity to the search prompt.</source>
+				<target>This 4D application allows you to perform semantic search on a set of icons (the Material Design icons by Google, available at https://fonts.google.com/icons).  An OpenAI key will be needed in order to transform the text prompt into a vector.  An ORDA query will then retrieve the best vector matches and display a list of icons ranked by similarity to the search prompt.</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelVersion" resname="StartScreen_LabelVersion">
+				<source>VERSION</source>
+				<target>VERSION</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelStack" resname="StartScreen_LabelStack">
+				<source>STACK</source>
+				<target>STACK</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelDocs" resname="StartScreen_LabelDocs">
+				<source>DOCS &amp; BLOG</source>
+				<target>DOCS &amp; BLOG</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelIcons" resname="StartScreen_LabelIcons">
+				<source>ICONS</source>
+				<target>ICONS</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Tagline" resname="StartScreen_Tagline">
+				<source>No API key needed for pre-vectorized search prompts.</source>
+				<target>No API key needed for pre-vectorized search prompts.</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_BtnDemo" resname="StartScreen_BtnDemo">
+				<source>Launch Demo  →</source>
+				<target>Launch Demo  →</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Footer" resname="StartScreen_Footer">
+				<source>4D Tech Note  ·  2026</source>
+				<target>4D Tech Note  ·  2026</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

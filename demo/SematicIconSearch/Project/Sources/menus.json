@@ -22,7 +22,7 @@
 			"title": ":xliff:CommonMenuFile",
 			"items": [
 				{
-					"title": "Semantic Icon Search ...",
+					"title": ":xliff:MenuItemSemanticIconSearch",
 					"method": "Run"
 				},
 				{

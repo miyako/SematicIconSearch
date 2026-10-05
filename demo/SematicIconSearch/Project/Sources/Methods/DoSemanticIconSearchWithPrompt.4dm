@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 #DECLARE($searchPrompt : Text; $thresholdPercentage : Real)->$results : Collection
 
 // STEP#0: check that the search prompt is not empty (empty strings cannot be embedded)
@@ -23,7 +23,7 @@ var $embeddingResult : cs:C1710.AIKit.OpenAIEmbeddingsResult
 $embeddingResult:=$embeddingAPI.create($searchPrompt; $model)
 
 If (Not:C34($embeddingResult.success))
-	ALERT:C41("An error occurred, the prompt could not be vectorized.")
+	ALERT:C41(Localized string:C991("AlertPromptNotVectorized"))
 	return 
 End if 
 

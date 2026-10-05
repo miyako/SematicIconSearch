@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="IconSearch" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="IconSearch_HeaderTitle" resname="IconSearch_HeaderTitle">
+				<source>SEMANTIC ICON SEARCH</source>
+				<target>セマンティックアイコン検索</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderBadge" resname="IconSearch_HeaderBadge">
+				<source>DEMO</source>
+				<target>デモ</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderRight" resname="IconSearch_HeaderRight">
+				<source>Tech Note  ·  2026</source>
+				<target>テクニカルノート  ·  2026</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SectionSearch" resname="IconSearch_SectionSearch">
+				<source>SEARCH</source>
+				<target>検索</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_BtnSearch" resname="IconSearch_BtnSearch">
+				<source>Run AI Search ↗</source>
+				<target>AI検索を実行 ↗</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SectionPreVect" resname="IconSearch_SectionPreVect">
+				<source>PRE-VECTORIZED</source>
+				<target>ベクトル化済み</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SectionThreshold" resname="IconSearch_SectionThreshold">
+				<source>THRESHOLD</source>
+				<target>しきい値</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_CosineSimilarity" resname="IconSearch_CosineSimilarity">
+				<source>Cosine similarity</source>
+				<target>コサイン類似度</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SliderMin" resname="IconSearch_SliderMin">
+				<source>50  loose</source>
+				<target>50  ゆるい</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SliderMax" resname="IconSearch_SliderMax">
+				<source>99  strict</source>
+				<target>99  厳しい</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_Info" resname="IconSearch_Info">
+				<source>Uses embeddings (via OpenAI and 4D.AIKit, powered by ORDA) to answer semantic search queries targeting a collection of icons (from the Google Material Icons project available at https://fonts.google.com/icons)</source>
+				<target>埋め込み（OpenAIと4D.AIKitを使用し、ORDAで処理）を使って、アイコンのコレクション（GoogleのMaterial Design Icons、https://fonts.google.com/icons）に対するセマンティック検索のクエリに応えます。</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_ResultsFor" resname="IconSearch_ResultsFor">
+				<source>Results for:</source>
+				<target>検索結果：</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_IconsFound" resname="IconSearch_IconsFound">
+				<source>{n} icons found</source>
+				<target>{n}件のアイコン</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_NoResults" resname="IconSearch_NoResults">
+				<source>⚠  No results found — reduce the threshold</source>
+				<target>⚠  該当なし — しきい値を下げてください</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderName" resname="IconSearch_HeaderName">
+				<source>Name</source>
+				<target>名前</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderIcon" resname="IconSearch_HeaderIcon">
+				<source>Icon</source>
+				<target>アイコン</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderScore" resname="IconSearch_HeaderScore">
+				<source>Score</source>
+				<target>スコア</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_FooterBrand" resname="IconSearch_FooterBrand">
+				<source>4D Tech Note  ·  Semantic Icon Search</source>
+				<target>4Dテクニカルノート  ·  セマンティックアイコン検索</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_ThresholdValue" resname="IconSearch_ThresholdValue">
+				<source>Threshold: {n}%</source>
+				<target>しきい値：{n}%</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 #DECLARE($searchVector : 4D:C1709.Vector; $thresholdPercentage : Real)->$results : Collection
 
 $results:=New collection:C1472()

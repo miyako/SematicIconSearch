@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="IconSearch" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="IconSearch_HeaderTitle" resname="IconSearch_HeaderTitle">
+				<source>SEMANTIC ICON SEARCH</source>
+				<target>SEMANTIC ICON SEARCH</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderBadge" resname="IconSearch_HeaderBadge">
+				<source>DEMO</source>
+				<target>DEMO</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderRight" resname="IconSearch_HeaderRight">
+				<source>Tech Note  ·  2026</source>
+				<target>Tech Note  ·  2026</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SectionSearch" resname="IconSearch_SectionSearch">
+				<source>SEARCH</source>
+				<target>SEARCH</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_BtnSearch" resname="IconSearch_BtnSearch">
+				<source>Run AI Search ↗</source>
+				<target>Run AI Search ↗</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SectionPreVect" resname="IconSearch_SectionPreVect">
+				<source>PRE-VECTORIZED</source>
+				<target>PRE-VECTORIZED</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SectionThreshold" resname="IconSearch_SectionThreshold">
+				<source>THRESHOLD</source>
+				<target>THRESHOLD</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_CosineSimilarity" resname="IconSearch_CosineSimilarity">
+				<source>Cosine similarity</source>
+				<target>Cosine similarity</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SliderMin" resname="IconSearch_SliderMin">
+				<source>50  loose</source>
+				<target>50  loose</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_SliderMax" resname="IconSearch_SliderMax">
+				<source>99  strict</source>
+				<target>99  strict</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_Info" resname="IconSearch_Info">
+				<source>Uses embeddings (via OpenAI and 4D.AIKit, powered by ORDA) to answer semantic search queries targeting a collection of icons (from the Google Material Icons project available at https://fonts.google.com/icons)</source>
+				<target>Uses embeddings (via OpenAI and 4D.AIKit, powered by ORDA) to answer semantic search queries targeting a collection of icons (from the Google Material Icons project available at https://fonts.google.com/icons)</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_ResultsFor" resname="IconSearch_ResultsFor">
+				<source>Results for:</source>
+				<target>Results for:</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_IconsFound" resname="IconSearch_IconsFound">
+				<source>{n} icons found</source>
+				<target>{n} icons found</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_NoResults" resname="IconSearch_NoResults">
+				<source>⚠  No results found — reduce the threshold</source>
+				<target>⚠  No results found — reduce the threshold</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderName" resname="IconSearch_HeaderName">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderIcon" resname="IconSearch_HeaderIcon">
+				<source>Icon</source>
+				<target>Icon</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_HeaderScore" resname="IconSearch_HeaderScore">
+				<source>Score</source>
+				<target>Score</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_FooterBrand" resname="IconSearch_FooterBrand">
+				<source>4D Tech Note  ·  Semantic Icon Search</source>
+				<target>4D Tech Note  ·  Semantic Icon Search</target>
+			</trans-unit>
+			<trans-unit id="IconSearch_ThresholdValue" resname="IconSearch_ThresholdValue">
+				<source>Threshold: {n}%</source>
+				<target>Threshold: {n}%</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

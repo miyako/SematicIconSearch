@@ -13,10 +13,9 @@
 	"height": 430,
 	"rightMargin": 0,
 	"bottomMargin": 0,
-	"windowTitle": "4D Tech Note — Semantic Icon Search",
+	"windowTitle": ":xliff:WindowTitle",
 	"destination": "detailScreen",
 	"fluentUI": true,
-	"method": "method.4dm",
 	"events": [
 		"onLoad",
 		"onPageChange",
@@ -63,7 +62,7 @@
 				},
 				"heroWordmarkMain": {
 					"type": "text",
-					"text": "SEMANTIC ICON SEARCH",
+					"text": ":xliff:StartScreen_Wordmark",
 					"top": 53,
 					"left": 5,
 					"width": 618,
@@ -94,7 +93,7 @@
 					"type": "rectangle",
 					"top": 15,
 					"left": 14,
-					"width": 74,
+					"width": 92,
 					"height": 18,
 					"fill": "#0ea5e9",
 					"stroke": "#0EA5E9",
@@ -102,10 +101,10 @@
 				},
 				"badgeTxt": {
 					"type": "text",
-					"text": "TECH NOTE",
+					"text": ":xliff:StartScreen_Badge",
 					"top": 17,
 					"left": 21,
-					"width": 62,
+					"width": 80,
 					"height": 11,
 					"textAlign": "center",
 					"fontSize": 9,
@@ -134,7 +133,7 @@
 				},
 				"txtEyebrow": {
 					"type": "text",
-					"text": "HOW IT WORKS",
+					"text": ":xliff:StartScreen_Eyebrow",
 					"top": 139,
 					"left": 17,
 					"width": 200,
@@ -146,7 +145,7 @@
 				},
 				"txtDescTitle": {
 					"type": "text",
-					"text": "Semantic Search on Icons",
+					"text": ":xliff:StartScreen_DescTitle",
 					"top": 164,
 					"left": 29,
 					"width": 554,
@@ -166,7 +165,7 @@
 				},
 				"txtDescBody": {
 					"type": "text",
-					"text": "This 4D application allows you to perform semantic search on a set of icons (the Material Design icons by Google, available at https://fonts.google.com/icons).  An OpenAI key will be needed in order to transform the text prompt into a vector.  An ORDA query will then retrieve the best vector matches and display a list of icons ranked by similarity to the search prompt.",
+					"text": ":xliff:StartScreen_DescBody",
 					"top": 183,
 					"left": 29,
 					"width": 567,
@@ -188,7 +187,7 @@
 				},
 				"labelVersion": {
 					"type": "text",
-					"text": "VERSION",
+					"text": ":xliff:StartScreen_LabelVersion",
 					"top": 266,
 					"left": 31,
 					"width": 100,
@@ -221,7 +220,7 @@
 				},
 				"labelStack": {
 					"type": "text",
-					"text": "STACK",
+					"text": ":xliff:StartScreen_LabelStack",
 					"top": 267,
 					"left": 167,
 					"width": 100,
@@ -266,7 +265,7 @@
 				},
 				"labelDocs": {
 					"type": "text",
-					"text": "DOCS & BLOG",
+					"text": ":xliff:StartScreen_LabelDocs",
 					"top": 274,
 					"left": 346,
 					"width": 87,
@@ -299,7 +298,7 @@
 				},
 				"txtDocsLink": {
 					"type": "text",
-					"text": "ICONS",
+					"text": ":xliff:StartScreen_LabelIcons",
 					"top": 295,
 					"left": 346,
 					"width": 87,
@@ -320,10 +319,10 @@
 				},
 				"txtTagline": {
 					"type": "text",
-					"text": "No API key needed for pre-vectorized search prompts.",
+					"text": ":xliff:StartScreen_Tagline",
 					"top": 351,
 					"left": 29,
-					"width": 290,
+					"width": 375,
 					"height": 14,
 					"fontSize": 12,
 					"stroke": "#000000",
@@ -331,11 +330,10 @@
 				},
 				"BtnDemo": {
 					"type": "button",
-					"text": "Launch Demo  →",
+					"text": ":xliff:StartScreen_BtnDemo",
 					"top": 347,
 					"left": 412,
 					"width": 194,
-					"height": 26,
 					"action": "Accept",
 					"shortcutKey": "[Return]",
 					"focusable": false,
@@ -350,7 +348,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/BtnDemo.4dm",
-					"display": true
+					"display": true,
+					"class": "default"
 				},
 				"footerTopRule": {
 					"type": "line",
@@ -362,7 +361,7 @@
 				},
 				"txtVersion": {
 					"type": "text",
-					"text": "4D Tech Note  ·  2026",
+					"text": ":xliff:StartScreen_Footer",
 					"top": 405,
 					"left": 454,
 					"width": 144,

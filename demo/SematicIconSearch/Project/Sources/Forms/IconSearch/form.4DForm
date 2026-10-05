@@ -11,7 +11,7 @@
 	"windowMaxHeight": 530,
 	"rightMargin": 0,
 	"bottomMargin": 0,
-	"windowTitle": "4D Tech Note — Semantic Icon Search",
+	"windowTitle": ":xliff:WindowTitle",
 	"destination": "detailScreen",
 	"fluentUI": true,
 	"method": "method.4dm",
@@ -69,7 +69,7 @@
 				},
 				"headerTitle": {
 					"type": "text",
-					"text": "SEMANTIC ICON SEARCH",
+					"text": ":xliff:IconSearch_HeaderTitle",
 					"top": 10,
 					"left": 314,
 					"width": 200,
@@ -92,7 +92,7 @@
 				},
 				"headerBadgeTxt": {
 					"type": "text",
-					"text": "DEMO",
+					"text": ":xliff:IconSearch_HeaderBadge",
 					"top": 11,
 					"left": 22,
 					"width": 40,
@@ -105,10 +105,10 @@
 				},
 				"headerRight": {
 					"type": "text",
-					"text": "Tech Note  ·  2026",
+					"text": ":xliff:IconSearch_HeaderRight",
 					"top": 11,
-					"left": 714,
-					"width": 96,
+					"left": 650,
+					"width": 160,
 					"height": 11,
 					"fontSize": 9,
 					"stroke": "#334155",
@@ -144,7 +144,7 @@
 				},
 				"txtSectionSearch": {
 					"type": "text",
-					"text": "SEARCH",
+					"text": ":xliff:IconSearch_SectionSearch",
 					"top": 52,
 					"left": 16,
 					"width": 232,
@@ -170,11 +170,10 @@
 				},
 				"btnSearch": {
 					"type": "button",
-					"text": "Run AI Search ↗",
+					"text": ":xliff:IconSearch_BtnSearch",
 					"top": 117,
 					"left": 16,
 					"width": 232,
-					"height": 30,
 					"events": [
 						"onLoad",
 						"onClick"
@@ -185,7 +184,8 @@
 					"fontWeight": "bold",
 					"fill": "#0ea5e9",
 					"stroke": "#0EA5E9",
-					"borderRadius": 8
+					"borderRadius": 8,
+					"class": "default"
 				},
 				"divider1": {
 					"type": "line",
@@ -206,7 +206,7 @@
 				},
 				"txtSectionPreVect": {
 					"type": "text",
-					"text": "PRE-VECTORIZED",
+					"text": ":xliff:IconSearch_SectionPreVect",
 					"top": 176,
 					"left": 16,
 					"width": 232,
@@ -256,7 +256,7 @@
 				},
 				"btnPrompt3": {
 					"type": "button",
-					"text": "Deportes y Ocio ↗",
+					"text": "スポーツとレジャー ↗",
 					"top": 264,
 					"left": 16,
 					"width": 232,
@@ -292,7 +292,7 @@
 				},
 				"txtSectionThreshold": {
 					"type": "text",
-					"text": "THRESHOLD",
+					"text": ":xliff:IconSearch_SectionThreshold",
 					"top": 319,
 					"left": 16,
 					"width": 130,
@@ -304,7 +304,7 @@
 				},
 				"txtCosineSim": {
 					"type": "text",
-					"text": "Cosine similarity",
+					"text": ":xliff:IconSearch_CosineSimilarity",
 					"top": 340,
 					"left": 16,
 					"width": 140,
@@ -346,7 +346,7 @@
 				},
 				"txtSliderMin": {
 					"type": "text",
-					"text": "50  loose",
+					"text": ":xliff:IconSearch_SliderMin",
 					"top": 393,
 					"left": 16,
 					"width": 80,
@@ -356,7 +356,7 @@
 				},
 				"txtSliderMax": {
 					"type": "text",
-					"text": "99  strict",
+					"text": ":xliff:IconSearch_SliderMax",
 					"top": 393,
 					"left": 168,
 					"width": 80,
@@ -375,7 +375,7 @@
 				},
 				"txtInfo": {
 					"type": "text",
-					"text": "Uses embeddings (via OpenAI and 4D.AIKit, powered by ORDA) to answer semantic search queries targeting a collection of icons (from the Google Material Icons project available at https://fonts.google.com/icons)",
+					"text": ":xliff:IconSearch_Info",
 					"top": 422,
 					"left": 16,
 					"width": 232,
@@ -420,7 +420,7 @@
 				},
 				"txtResultsFor": {
 					"type": "text",
-					"text": "Results for:",
+					"text": ":xliff:IconSearch_ResultsFor",
 					"top": 48,
 					"left": 282,
 					"width": 72,
@@ -448,7 +448,7 @@
 					"top": 48,
 					"width": 182,
 					"height": 16,
-					"dataSource": "String:C10(iconSearchResult.length)+\" icons found\"",
+					"dataSource": "Replace string(Localized string:C991(\"IconSearch_IconsFound\"); \"{n}\"; String:C10(iconSearchResult.length))",
 					"enterable": false,
 					"textAlign": "right",
 					"borderStyle": "none",
@@ -476,7 +476,7 @@
 				},
 				"labelReduceThreshold": {
 					"type": "text",
-					"text": "⚠  No results found — reduce the threshold",
+					"text": ":xliff:IconSearch_NoResults",
 					"top": 83,
 					"left": 540,
 					"width": 276,
@@ -521,7 +521,7 @@
 					"columns": [
 						{
 							"header": {
-								"text": "Name",
+								"text": ":xliff:IconSearch_HeaderName",
 								"name": "lbhName",
 								"fontWeight": "bold",
 								"fontSize": 10,
@@ -536,12 +536,13 @@
 							"verticalAlign": "middle",
 							"width": 228,
 							"stroke": "#0EA5E9",
-							"fontWeight": "normal"
+							"fontWeight": "normal",
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "lbhIcon",
-								"text": "Icon",
+								"text": ":xliff:IconSearch_HeaderIcon",
 								"fontWeight": "bold",
 								"fontSize": 10,
 								"stroke": "#94a3b8",
@@ -556,12 +557,13 @@
 							"pictureFormat": "proportionalCenter",
 							"width": 130,
 							"rowHeightAuto": false,
-							"fill": "#ffffff"
+							"fill": "#ffffff",
+							"truncateMode": "none"
 						},
 						{
 							"header": {
 								"name": "lbhScore",
-								"text": "Score",
+								"text": ":xliff:IconSearch_HeaderScore",
 								"fontWeight": "bold",
 								"fontSize": 10,
 								"stroke": "#94a3b8",
@@ -578,9 +580,11 @@
 							"numberFormat": "##0.00 %",
 							"width": 158,
 							"stroke": "#0EA5E9",
-							"fontWeight": "normal"
+							"fontWeight": "normal",
+							"truncateMode": "none"
 						}
-					]
+					],
+					"resizingMode": "legacy"
 				},
 				"horzDivider3": {
 					"type": "line",
@@ -601,7 +605,7 @@
 				},
 				"footerBrandLeft": {
 					"type": "text",
-					"text": "4D Tech Note  ·  Semantic Icon Search",
+					"text": ":xliff:IconSearch_FooterBrand",
 					"top": 512,
 					"left": 282,
 					"width": 260,
@@ -615,7 +619,7 @@
 					"top": 511,
 					"width": 196,
 					"height": 14,
-					"dataSource": "\"Threshold: \"+String:C10(iconSearchThreshold)+\"%\"",
+					"dataSource": "Replace string(Localized string:C991(\"IconSearch_ThresholdValue\"); \"{n}\"; String:C10(iconSearchThreshold))",
 					"enterable": false,
 					"borderStyle": "none",
 					"fill": "transparent",

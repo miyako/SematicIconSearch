@@ -6,6 +6,22 @@
 				<source>Missing OpenAI API key. Copy Project/Sources/AIProviders.example.json to AIProviders.json in the same folder and set your API key, or add an OpenAI provider in the AI page of the Structure Settings.</source>
 				<target>OpenAI の API キーがありません。Project/Sources/AIProviders.example.json を同じフォルダーに AIProviders.json としてコピーして API キーを設定するか、ストラクチャー設定の「AI」ページで OpenAI のプロバイダーを追加してください。</target>
 			</trans-unit>
+			<trans-unit id="WindowTitle" resname="WindowTitle">
+				<source>4D Tech Note — Semantic Icon Search</source>
+				<target>4Dテクニカルノート — セマンティックアイコン検索</target>
+			</trans-unit>
+			<trans-unit id="AlertPromptNotVectorized" resname="AlertPromptNotVectorized">
+				<source>An error occurred, the prompt could not be vectorized.</source>
+				<target>エラーが発生したため、プロンプトをベクトル化できませんでした。</target>
+			</trans-unit>
+			<trans-unit id="AlertAIKitMissing" resname="AlertAIKitMissing">
+				<source>AI Kit dependency must be installed in order to run AI Search</source>
+				<target>AI検索を実行するには、4D AI Kitの依存関係をインストールする必要があります。</target>
+			</trans-unit>
+			<trans-unit id="MessageEmbeddingGenerated" resname="MessageEmbeddingGenerated">
+				<source>embedding generated for icon ID={id}, name={name}</source>
+				<target>アイコンの埋め込みを生成しました（ID={id}、名前={name}）</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

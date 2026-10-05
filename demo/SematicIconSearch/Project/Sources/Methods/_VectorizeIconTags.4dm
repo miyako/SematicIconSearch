@@ -21,7 +21,7 @@ For each ($iconEntity; ds:C1482.Icon.all())
 	
 	$embeddingResult:=$embeddingAPI.create($iconEntity.tags; $model)
 	If ($embeddingResult.success)
-		MESSAGE:C88("embedding generated for icon ID="+String:C10($iconEntity.ID)+", name="+$iconEntity.name)
+		MESSAGE:C88(Replace string(Replace string(Localized string:C991("MessageEmbeddingGenerated"); "{id}"; String:C10($iconEntity.ID)); "{name}"; $iconEntity.name))
 		
 		$iconEntity.vector:=$embeddingResult.vector
 		$iconEntity.save()
