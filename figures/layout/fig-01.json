@@ -11,7 +11,9 @@
     178,
     14
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 2.0,
+   "weight": "light"
   },
   {
    "box": [
@@ -20,7 +22,8 @@
     79,
     10
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -29,7 +32,8 @@
     77,
     10
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -38,7 +42,8 @@
     116,
     13
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -47,7 +52,8 @@
     104,
     13
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -56,7 +62,8 @@
     71,
     11
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -65,7 +72,8 @@
     84,
     12
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   }
  ]
 }

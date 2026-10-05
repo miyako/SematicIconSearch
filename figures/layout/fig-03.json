@@ -11,7 +11,8 @@
     344,
     19
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -20,7 +21,8 @@
     144,
     19
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -29,7 +31,8 @@
     157,
     15
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -38,7 +41,8 @@
     143,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -47,7 +51,8 @@
     62,
     18
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -56,7 +61,8 @@
     62,
     18
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -65,7 +71,8 @@
     62,
     18
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -74,7 +81,9 @@
     143,
     19
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -83,7 +92,14 @@
     150,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "erase_pad": 6
   },
   {
    "box": [
@@ -92,7 +108,8 @@
     111,
     12
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -101,7 +118,14 @@
     182,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "erase_pad": 6
   },
   {
    "box": [
@@ -110,7 +134,8 @@
     265,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -119,7 +144,8 @@
     35,
     12
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -128,7 +154,8 @@
     35,
     12
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -137,7 +164,8 @@
     35,
     12
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -146,7 +174,8 @@
     81,
     15
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -155,7 +184,8 @@
     81,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -164,7 +194,9 @@
     48,
     19
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -173,7 +205,9 @@
     48,
     19
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -182,7 +216,8 @@
     190,
     14
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -191,7 +226,8 @@
     191,
     14
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -200,7 +236,8 @@
     41,
     12
    ],
-   "align": "center"
+   "align": "left",
+   "size": 17
   },
   {
    "box": [
@@ -209,7 +246,9 @@
     67,
     15
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -218,7 +257,9 @@
     143,
     19
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -227,7 +268,8 @@
     48,
     11
    ],
-   "align": "center"
+   "align": "left",
+   "size": 17
   },
   {
    "box": [
@@ -236,7 +278,8 @@
     232,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -245,7 +288,8 @@
     124,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -254,7 +298,9 @@
     102,
     14
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -263,7 +309,9 @@
     143,
     19
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -272,7 +320,8 @@
     236,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -281,7 +330,8 @@
     298,
     14
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -290,7 +340,8 @@
     156,
     15
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -299,7 +350,9 @@
     52,
     17
    ],
-   "align": "center"
+   "align": "left",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -308,7 +361,9 @@
     81,
     16
    ],
-   "align": "center"
+   "align": "left",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -317,7 +372,9 @@
     90,
     17
    ],
-   "align": "center"
+   "align": "left",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -326,7 +383,9 @@
     71,
     19
    ],
-   "align": "center"
+   "align": "left",
+   "scale": 1.1,
+   "weight": "bold"
   },
   {
    "box": [
@@ -335,7 +394,13 @@
     102,
     15
    ],
-   "align": "center"
+   "align": "center",
+   "bg": [
+    234,
+    243,
+    226
+   ],
+   "scale": 1.1
   },
   {
    "box": [
@@ -344,7 +409,13 @@
     149,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "bg": [
+    251,
+    235,
+    236
+   ],
+   "scale": 1.1
   },
   {
    "box": [
@@ -353,7 +424,13 @@
     96,
     15
    ],
-   "align": "center"
+   "align": "center",
+   "bg": [
+    234,
+    243,
+    222
+   ],
+   "scale": 1.1
   },
   {
    "box": [
@@ -362,7 +439,13 @@
     127,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "bg": [
+    226,
+    243,
+    237
+   ],
+   "scale": 1.1
   },
   {
    "box": [
@@ -371,7 +454,8 @@
     200,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -380,7 +464,8 @@
     251,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -389,7 +474,8 @@
     213,
     15
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -398,7 +484,8 @@
     220,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -407,7 +494,8 @@
     164,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   },
   {
    "box": [
@@ -416,7 +504,8 @@
     159,
     16
    ],
-   "align": "center"
+   "align": "center",
+   "scale": 1.1
   }
  ]
 }

@@ -47,8 +47,10 @@ def mode_color(pixels):
         key = tuple(c // 8 * 8 for c in p[:3])
         counts[key] = counts.get(key, 0) + 1
     key = max(counts, key=counts.get)
-    sel = [p for p in pixels if tuple(c // 8 * 8 for c in p[:3]) == key]
-    return tuple(sum(p[i] for p in sel) // len(sel) for i in range(4))
+    sel = [tuple(p) for p in pixels if tuple(c // 8 * 8 for c in p[:3]) == key]
+    # the commonest exact colour of the winning bucket, not its mean: averaging pure white
+    # with anti-aliasing noise gives an off-white that shows as a visible patch
+    return max(set(sel), key=sel.count)
 
 
 def background(img, box, pad=4):
