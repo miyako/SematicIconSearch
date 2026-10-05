@@ -8,6 +8,7 @@ that file.
   python tools/tool4d.py demo/MyProject --compile          # syntax check (Compile project)
   python tools/tool4d.py demo/MyProject test.4dm           # run a test method
   python tools/tool4d.py demo/MyProject test.4dm --data    # with a copy of Data/
+  python tools/tool4d.py demo/MyProject test.4dm --new-data  # with a new, empty data file
   python tools/tool4d.py demo/MyProject --compile --component ~/Library/Caches/4D/Dependencies/.github/4d/4D-AIKit/21R3.4
                                                            # with a component from the 4D dependency cache
                                                            # (tool4d does not download GitHub dependencies)
@@ -52,6 +53,7 @@ def main():
     ap.add_argument("method", nargs="?", help=".4dm file with the test method")
     ap.add_argument("--compile", action="store_true")
     ap.add_argument("--data", action="store_true", help="copy Data/ and open it")
+    ap.add_argument("--new-data", action="store_true", help="start with a new, empty data file")
     ap.add_argument("--component", action="append", default=[], metavar="DIR",
                     help="component bundle (folder with Contents/ *.4DZ) to copy into Components/")
     args = ap.parse_args()
@@ -73,7 +75,10 @@ def main():
         (tmp / "Project/Sources/Methods/agentTest.4dm").write_text(code, encoding="utf-8")
         cmd = [find_tool4d(), f"--project={tmp / 'Project' / proj.name}", "--startup-method=agentTest",
                "--skip-onstartup"]
-        cmd += [f"--data={tmp / 'Data' / 'data.4DD'}"] if args.data else ["--dataless"]
+        if args.new_data:
+            (tmp / "Data").mkdir(exist_ok=True)
+        cmd += [f"--data={tmp / 'Data' / 'data.4DD'}"] if args.data or args.new_data else ["--dataless"]
+        cmd += ["--create-data"] if args.new_data else []
         run = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
         out = tmp / "agent-test.txt"
         if not out.exists():
