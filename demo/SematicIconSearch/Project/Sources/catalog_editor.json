@@ -1,0 +1,34 @@
+{
+	"tables": {
+		"Prompt": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 178,
+				"top": 0,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"Icon": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 4,
+				"top": 0,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		}
+	}
+}

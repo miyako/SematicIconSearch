@@ -1,0 +1,641 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 820,
+	"windowMinHeight": 530,
+	"windowMaxWidth": 820,
+	"windowMaxHeight": 530,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"windowTitle": ":xliff:WindowTitle",
+	"destination": "detailScreen",
+	"fluentUI": true,
+	"method": "method.4dm",
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"bgBase": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 820,
+					"height": 530,
+					"fill": "#f1f5f9",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"visibility": "visible"
+				},
+				"headerBg": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 820,
+					"height": 36,
+					"fill": "#FFFFFF",
+					"stroke": "transparent"
+				},
+				"headerTopAccent": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 820,
+					"height": 3,
+					"fill": "#0ea5e9",
+					"stroke": "transparent"
+				},
+				"headerTitle": {
+					"type": "text",
+					"text": ":xliff:IconSearch_HeaderTitle",
+					"top": 10,
+					"left": 314,
+					"width": 200,
+					"height": 13,
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#0EA5E9",
+					"letterSpacing": 0.14,
+					"textAlign": "center"
+				},
+				"headerBadgeBg": {
+					"type": "rectangle",
+					"top": 9,
+					"left": 16,
+					"width": 52,
+					"height": 18,
+					"fill": "#0ea5e9",
+					"stroke": "#0ea5e9",
+					"borderRadius": 9
+				},
+				"headerBadgeTxt": {
+					"type": "text",
+					"text": ":xliff:IconSearch_HeaderBadge",
+					"top": 11,
+					"left": 22,
+					"width": 40,
+					"height": 12,
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#ffffff",
+					"textAlign": "center",
+					"letterSpacing": 0.1
+				},
+				"headerRight": {
+					"type": "text",
+					"text": ":xliff:IconSearch_HeaderRight",
+					"top": 11,
+					"left": 650,
+					"width": 160,
+					"height": 11,
+					"fontSize": 9,
+					"stroke": "#334155",
+					"textAlign": "right",
+					"fontWeight": "bold"
+				},
+				"leftPanelBg": {
+					"type": "rectangle",
+					"top": 36,
+					"left": 0,
+					"width": 264,
+					"height": 502,
+					"fill": "#ffffff",
+					"stroke": "#e2e8f0"
+				},
+				"searchSectionBg": {
+					"type": "rectangle",
+					"top": 36,
+					"left": 0,
+					"width": 264,
+					"height": 122,
+					"fill": "#EFF6FF",
+					"stroke": "transparent"
+				},
+				"accentSearch": {
+					"type": "rectangle",
+					"top": 49,
+					"left": 0,
+					"width": 4,
+					"height": 18,
+					"fill": "#0ea5e9",
+					"stroke": "#0ea5e9"
+				},
+				"txtSectionSearch": {
+					"type": "text",
+					"text": ":xliff:IconSearch_SectionSearch",
+					"top": 52,
+					"left": 16,
+					"width": 232,
+					"height": 12,
+					"fontWeight": "bold",
+					"fontSize": 10,
+					"stroke": "#0EA5E9",
+					"letterSpacing": 0.12
+				},
+				"tiPrompt": {
+					"type": "input",
+					"left": 16,
+					"top": 72,
+					"width": 232,
+					"height": 19,
+					"dataSource": "iconSearchPrompt",
+					"placeholder": "Describe an icon…",
+					"fontSize": 13,
+					"multiline": "no",
+					"fill": "#ffffff",
+					"stroke": "#1e90ff",
+					"borderRadius": 8
+				},
+				"btnSearch": {
+					"type": "button",
+					"text": ":xliff:IconSearch_BtnSearch",
+					"top": 117,
+					"left": 16,
+					"width": 232,
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"method": "ObjectMethods/btnSearch.4dm",
+					"defaultButton": true,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#0ea5e9",
+					"borderRadius": 8,
+					"class": "default"
+				},
+				"divider1": {
+					"type": "line",
+					"left": 0,
+					"top": 158,
+					"width": 264,
+					"height": 1,
+					"stroke": "#e2e8f0"
+				},
+				"accentPreVect": {
+					"type": "rectangle",
+					"top": 173,
+					"left": 0,
+					"width": 4,
+					"height": 16,
+					"fill": "#0ea5e9",
+					"stroke": "#0ea5e9"
+				},
+				"txtSectionPreVect": {
+					"type": "text",
+					"text": ":xliff:IconSearch_SectionPreVect",
+					"top": 176,
+					"left": 16,
+					"width": 232,
+					"height": 12,
+					"fontWeight": "bold",
+					"fontSize": 10,
+					"stroke": "#0EA5E9",
+					"letterSpacing": 0.12
+				},
+				"btnPrompt1": {
+					"type": "button",
+					"text": "Art et musique ↗",
+					"top": 196,
+					"left": 16,
+					"width": 232,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"borderStyle": "none",
+					"stroke": "#0EA5E9",
+					"fill": "#EFF6FF",
+					"fontSize": 12,
+					"borderRadius": 8,
+					"method": "ObjectMethods/btnPrompt1.4dm",
+					"fontWeight": "bold"
+				},
+				"btnPrompt2": {
+					"type": "button",
+					"text": "Transportation and Travel ↗",
+					"top": 230,
+					"left": 16,
+					"width": 232,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"borderStyle": "none",
+					"stroke": "#0EA5E9",
+					"fill": "#ffffff",
+					"fontSize": 12,
+					"borderRadius": 8,
+					"method": "ObjectMethods/btnPrompt2.4dm",
+					"fontWeight": "bold"
+				},
+				"btnPrompt3": {
+					"type": "button",
+					"text": "スポーツとレジャー ↗",
+					"top": 264,
+					"left": 16,
+					"width": 232,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"style": "flat",
+					"borderStyle": "none",
+					"stroke": "#0EA5E9",
+					"fill": "#ffffff",
+					"fontSize": 12,
+					"borderRadius": 8,
+					"method": "ObjectMethods/btnPrompt3.4dm",
+					"fontWeight": "bold"
+				},
+				"divider2": {
+					"type": "line",
+					"left": 0,
+					"top": 302,
+					"width": 264,
+					"height": 1,
+					"stroke": "#e2e8f0"
+				},
+				"accentThreshold": {
+					"type": "rectangle",
+					"top": 316,
+					"left": 0,
+					"width": 4,
+					"height": 16,
+					"fill": "#0ea5e9",
+					"stroke": "#0ea5e9"
+				},
+				"txtSectionThreshold": {
+					"type": "text",
+					"text": ":xliff:IconSearch_SectionThreshold",
+					"top": 319,
+					"left": 16,
+					"width": 130,
+					"height": 12,
+					"fontWeight": "bold",
+					"fontSize": 10,
+					"stroke": "#0EA5E9",
+					"letterSpacing": 0.12
+				},
+				"txtCosineSim": {
+					"type": "text",
+					"text": ":xliff:IconSearch_CosineSimilarity",
+					"top": 340,
+					"left": 16,
+					"width": 140,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#94a3b8"
+				},
+				"itThreshold": {
+					"type": "input",
+					"left": 10,
+					"top": 337,
+					"width": 238,
+					"height": 20,
+					"enterable": false,
+					"borderStyle": "none",
+					"dataSource": "String:C10(iconSearchThreshold)+\"%\"",
+					"textAlign": "right",
+					"fill": "transparent",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#0f172a"
+				},
+				"Règle": {
+					"type": "ruler",
+					"left": 16,
+					"top": 362,
+					"width": 232,
+					"height": 26,
+					"min": 50,
+					"max": 99,
+					"events": [
+						"onDataChange"
+					],
+					"graduationStep": 10,
+					"step": 1,
+					"showGraduations": true,
+					"dataSourceTypeHint": "number",
+					"dataSource": "iconSearchThreshold"
+				},
+				"txtSliderMin": {
+					"type": "text",
+					"text": ":xliff:IconSearch_SliderMin",
+					"top": 393,
+					"left": 16,
+					"width": 80,
+					"height": 12,
+					"fontSize": 9,
+					"stroke": "#94a3b8"
+				},
+				"txtSliderMax": {
+					"type": "text",
+					"text": ":xliff:IconSearch_SliderMax",
+					"top": 393,
+					"left": 168,
+					"width": 80,
+					"height": 12,
+					"fontSize": 9,
+					"stroke": "#94a3b8",
+					"textAlign": "right"
+				},
+				"divider3": {
+					"type": "line",
+					"left": 0,
+					"top": 414,
+					"width": 264,
+					"height": 1,
+					"stroke": "#e2e8f0"
+				},
+				"txtInfo": {
+					"type": "text",
+					"text": ":xliff:IconSearch_Info",
+					"top": 422,
+					"left": 16,
+					"width": 232,
+					"height": 71,
+					"fontSize": 10,
+					"stroke": "#94a3b8",
+					"wordWrap": true
+				},
+				"leftFooterRule": {
+					"type": "line",
+					"left": 0,
+					"top": 486,
+					"width": 264,
+					"height": 1,
+					"stroke": "#f1f5f9"
+				},
+				"vertDivider": {
+					"type": "line",
+					"left": 264,
+					"top": 36,
+					"width": 1,
+					"height": 494,
+					"stroke": "#e2e8f0"
+				},
+				"resultsHeaderBg": {
+					"type": "rectangle",
+					"top": 36,
+					"left": 265,
+					"width": 555,
+					"height": 42,
+					"fill": "#ffffff",
+					"stroke": "transparent"
+				},
+				"resultsHeaderAccentLine": {
+					"type": "rectangle",
+					"top": 36,
+					"left": 265,
+					"width": 555,
+					"height": 2,
+					"fill": "#0ea5e9",
+					"stroke": "transparent"
+				},
+				"txtResultsFor": {
+					"type": "text",
+					"text": ":xliff:IconSearch_ResultsFor",
+					"top": 48,
+					"left": 282,
+					"width": 72,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#94a3b8"
+				},
+				"itQueryLabel": {
+					"type": "input",
+					"left": 356,
+					"top": 47,
+					"width": 246,
+					"height": 18,
+					"enterable": false,
+					"borderStyle": "none",
+					"dataSource": "iconSearchPrompt",
+					"fontWeight": "bold",
+					"fontSize": 12,
+					"fill": "transparent",
+					"stroke": "#0EA5E9"
+				},
+				"itTotal": {
+					"type": "input",
+					"left": 628,
+					"top": 48,
+					"width": 182,
+					"height": 16,
+					"dataSource": "Replace string(Localized string:C991(\"IconSearch_IconsFound\"); \"{n}\"; String:C10(iconSearchResult.length))",
+					"enterable": false,
+					"textAlign": "right",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#94a3b8"
+				},
+				"horzDivider1": {
+					"type": "line",
+					"left": 264,
+					"top": 78,
+					"width": 556,
+					"height": 1,
+					"stroke": "#e2e8f0"
+				},
+				"statusRowBg": {
+					"type": "rectangle",
+					"top": 78,
+					"left": 265,
+					"width": 555,
+					"height": 24,
+					"fill": "#f8fafc",
+					"stroke": "transparent"
+				},
+				"labelReduceThreshold": {
+					"type": "text",
+					"text": ":xliff:IconSearch_NoResults",
+					"top": 83,
+					"left": 540,
+					"width": 276,
+					"height": 14,
+					"textAlign": "right",
+					"stroke": "#ef4444",
+					"fontWeight": "bold",
+					"fontSize": 10,
+					"visibility": "hidden"
+				},
+				"horzDivider2": {
+					"type": "line",
+					"left": 264,
+					"top": 102,
+					"width": 556,
+					"height": 1,
+					"stroke": "#e2e8f0"
+				},
+				"lbIcons": {
+					"type": "listbox",
+					"left": 278,
+					"top": 102,
+					"width": 542,
+					"height": 392,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "iconSearchResult",
+					"headerHeight": "26px",
+					"rowHeight": "40px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#f1f5f9",
+					"verticalLineStroke": "transparent",
+					"fill": "#ffffff",
+					"showHeaders": true,
+					"fontSize": 12,
+					"alternateFill": "#f8fafc",
+					"columns": [
+						{
+							"header": {
+								"text": ":xliff:IconSearch_HeaderName",
+								"name": "lbhName",
+								"fontWeight": "bold",
+								"fontSize": 10,
+								"stroke": "#94a3b8"
+							},
+							"name": "lbcName",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "This:C1470.name",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"width": 228,
+							"stroke": "#0EA5E9",
+							"fontWeight": "normal",
+							"truncateMode": "none"
+						},
+						{
+							"header": {
+								"name": "lbhIcon",
+								"text": ":xliff:IconSearch_HeaderIcon",
+								"fontWeight": "bold",
+								"fontSize": 10,
+								"stroke": "#94a3b8",
+								"textAlign": "center"
+							},
+							"name": "lbcPicture",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSourceTypeHint": "picture",
+							"dataSource": "This:C1470.picture",
+							"pictureFormat": "proportionalCenter",
+							"width": 130,
+							"rowHeightAuto": false,
+							"fill": "#ffffff",
+							"truncateMode": "none"
+						},
+						{
+							"header": {
+								"name": "lbhScore",
+								"text": ":xliff:IconSearch_HeaderScore",
+								"fontWeight": "bold",
+								"fontSize": 10,
+								"stroke": "#94a3b8",
+								"textAlign": "center"
+							},
+							"name": "lbcScore",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.score",
+							"dataSourceTypeHint": "number",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"numberFormat": "##0.00 %",
+							"width": 158,
+							"stroke": "#0EA5E9",
+							"fontWeight": "normal",
+							"truncateMode": "none"
+						}
+					],
+					"resizingMode": "legacy"
+				},
+				"horzDivider3": {
+					"type": "line",
+					"left": 264,
+					"top": 494,
+					"width": 556,
+					"height": 1,
+					"stroke": "#e2e8f0"
+				},
+				"footerRightBg": {
+					"type": "rectangle",
+					"top": 502,
+					"left": 265,
+					"width": 555,
+					"height": 36,
+					"fill": "#f8fafc",
+					"stroke": "transparent"
+				},
+				"footerBrandLeft": {
+					"type": "text",
+					"text": ":xliff:IconSearch_FooterBrand",
+					"top": 512,
+					"left": 282,
+					"width": 260,
+					"height": 12,
+					"fontSize": 9,
+					"stroke": "#94a3b8"
+				},
+				"itThrLabel": {
+					"type": "input",
+					"left": 614,
+					"top": 511,
+					"width": 196,
+					"height": 14,
+					"dataSource": "Replace string(Localized string:C991(\"IconSearch_ThresholdValue\"); \"{n}\"; String:C10(iconSearchThreshold))",
+					"enterable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"stroke": "#0EA5E9"
+				}
+			}
+		}
+	],
+	"geometryStamp": 895,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

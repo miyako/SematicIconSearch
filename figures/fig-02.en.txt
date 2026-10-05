@@ -1,0 +1,50 @@
+4D Tech Note — Semantic Icon Search
+‘SEMANTIC ICON SEARCH
+Tech Note
+2026
+Results for:
+‘Transportation and Travel
+found
+SEARCH
+‘Transportation and Travel
+Name
+leon
+Score
+directions_boat
+85,65 %
+PRE-VECTORIZED
+directions_bus
+directions_subway
+85,38 %
+directions_transit
+85,38 %
+85,07 %
+train
+‘THRESHOLD
+Cosine similarity
+83%
+airport_shuttle
+85,05 %
+directions_railway
+85,02 %
+lore
+flight_takeoft
+dings (via 0
+and
+ies ta
+ORDA) ta answer
+man
+ns pro
+ction of
+ns (rom the
+Google Material
+val
+flight
+84,49 %
+https:
+‘com
+8)
+3 Configure OpenAl API key
+‘Threshold: 83%
+ech N
+00

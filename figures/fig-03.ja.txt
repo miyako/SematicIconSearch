@@ -1,0 +1,46 @@
+4Dにおけるキーワードマッチングとセマンティック検索
+キーワードマッチング
+ベクトル化フェーズ
+4Dの既存レコード
+レコード1
+レコード2
+レコード3
+埋め込みモデル
+キーワード検索には
+テキスト → 4D.Vector
+追加の準備は不要
+レコードごとに4D.Vectorを保存・1536次元
+Vec 1
+Vec 2
+Vec 3
+クエリフェーズ
+クエリフェーズ
+クエリ
+クエリ
+"robot automation machine"
+"robot automation machine"
+保存済み
+トークン化
+埋め込みモデル
+ベクトル
+"robot" · "automation" · "machine"
+クエリ → 4D.Vector
+レコードを走査
+類似度関数
+トークンごとに部分文字列／インデックス検索
+cosineSimilarity() · dotSimilarity()
+euclideanDistance()
+一致
+不一致
+同じトピック
+同義語
+キーワードあり
+同義語／言い換え
+類似度：高
+共通キーワードなし
+「automated system」は
+「automated system」が、
+見つからない（クエリと結果に
+クエリと結果に共通の
+共通のキーワードがない）
+キーワードがなくても返される

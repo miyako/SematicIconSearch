@@ -1,0 +1,412 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 618,
+	"windowMinHeight": 390,
+	"windowMaxWidth": 618,
+	"windowMaxHeight": 390,
+	"width": 618,
+	"height": 430,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"windowTitle": ":xliff:WindowTitle",
+	"destination": "detailScreen",
+	"fluentUI": true,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"bgBase": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 617,
+					"height": 428,
+					"fill": "#f8fafc",
+					"stroke": "#b1c4dd",
+					"strokeWidth": 0,
+					"visibility": "visible"
+				},
+				"heroBg": {
+					"type": "rectangle",
+					"top": 3,
+					"left": 0,
+					"width": 614,
+					"height": 130,
+					"fill": "#E0F2FE",
+					"stroke": "transparent",
+					"visibility": "visible"
+				},
+				"heroWordmarkMain": {
+					"type": "text",
+					"text": ":xliff:StartScreen_Wordmark",
+					"top": 53,
+					"left": 5,
+					"width": 618,
+					"height": 28,
+					"textAlign": "center",
+					"fontSize": 22,
+					"fontWeight": "bold",
+					"stroke": "#0284c7",
+					"letterSpacing": 0.18
+				},
+				"heroRuleLLeft": {
+					"type": "line",
+					"top": 70,
+					"left": 93,
+					"width": 40,
+					"height": 1,
+					"stroke": "#7dd3fc"
+				},
+				"heroRuleRight": {
+					"type": "line",
+					"top": 70,
+					"left": 460,
+					"width": 40,
+					"height": 1,
+					"stroke": "#7dd3fc"
+				},
+				"badgeBg": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 14,
+					"width": 92,
+					"height": 18,
+					"fill": "#0ea5e9",
+					"stroke": "#0EA5E9",
+					"borderRadius": 9
+				},
+				"badgeTxt": {
+					"type": "text",
+					"text": ":xliff:StartScreen_Badge",
+					"top": 17,
+					"left": 21,
+					"width": 80,
+					"height": 11,
+					"textAlign": "center",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#ffffff",
+					"letterSpacing": 0.08
+				},
+				"cardDescBg": {
+					"type": "rectangle",
+					"top": 251,
+					"left": 11,
+					"width": 599,
+					"height": 84,
+					"fill": "#ffffff",
+					"stroke": "#e2e8f0",
+					"borderRadius": 12
+				},
+				"cardDescAccent": {
+					"type": "rectangle",
+					"top": 155,
+					"left": 11,
+					"width": 3,
+					"height": 88,
+					"fill": "#0ea5e9",
+					"stroke": "#0EA5E9"
+				},
+				"txtEyebrow": {
+					"type": "text",
+					"text": ":xliff:StartScreen_Eyebrow",
+					"top": 139,
+					"left": 17,
+					"width": 200,
+					"height": 12,
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#0EA5E9",
+					"letterSpacing": 0.1
+				},
+				"txtDescTitle": {
+					"type": "text",
+					"text": ":xliff:StartScreen_DescTitle",
+					"top": 164,
+					"left": 29,
+					"width": 554,
+					"height": 17,
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"stroke": "#0f172a",
+					"fontFamily": "Arial"
+				},
+				"descTitleRule": {
+					"type": "line",
+					"top": 198,
+					"left": 38,
+					"width": 554,
+					"height": 1,
+					"stroke": "#f1f5f9"
+				},
+				"txtDescBody": {
+					"type": "text",
+					"text": ":xliff:StartScreen_DescBody",
+					"top": 183,
+					"left": 29,
+					"width": 567,
+					"height": 51,
+					"fontSize": 11,
+					"stroke": "#000000",
+					"wordWrap": true,
+					"fontFamily": "Arial"
+				},
+				"cardVersion": {
+					"type": "rectangle",
+					"top": 263,
+					"left": 16,
+					"width": 124,
+					"height": 62,
+					"fill": "#ffffff",
+					"stroke": "#e2e8f0",
+					"borderRadius": 10
+				},
+				"labelVersion": {
+					"type": "text",
+					"text": ":xliff:StartScreen_LabelVersion",
+					"top": 266,
+					"left": 31,
+					"width": 100,
+					"height": 11,
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#94a3b8",
+					"letterSpacing": 0.1
+				},
+				"valVersion": {
+					"type": "text",
+					"text": "4D 21+",
+					"top": 286,
+					"left": 31,
+					"width": 100,
+					"height": 22,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#0f172a"
+				},
+				"cardStack": {
+					"type": "rectangle",
+					"top": 263,
+					"left": 151,
+					"width": 157,
+					"height": 62,
+					"fill": "#ffffff",
+					"stroke": "#e2e8f0",
+					"borderRadius": 10
+				},
+				"labelStack": {
+					"type": "text",
+					"text": ":xliff:StartScreen_LabelStack",
+					"top": 267,
+					"left": 167,
+					"width": 100,
+					"height": 11,
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#94a3b8",
+					"letterSpacing": 0.1
+				},
+				"valStack1": {
+					"type": "text",
+					"text": "4D  ·  ORDA",
+					"top": 282,
+					"left": 176,
+					"width": 220,
+					"height": 14,
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#334155",
+					"fontFamily": "monospace"
+				},
+				"valStack2": {
+					"type": "text",
+					"text": "4D.AIKit  ·  4D.Vector",
+					"top": 302,
+					"left": 176,
+					"width": 220,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#94a3b8",
+					"fontFamily": "monospace"
+				},
+				"cardDocs": {
+					"type": "rectangle",
+					"top": 263,
+					"left": 333,
+					"width": 259,
+					"height": 62,
+					"fill": "#ffffff",
+					"stroke": "#e2e8f0",
+					"borderRadius": 10
+				},
+				"labelDocs": {
+					"type": "text",
+					"text": ":xliff:StartScreen_LabelDocs",
+					"top": 274,
+					"left": 346,
+					"width": 87,
+					"height": 12,
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#94A3B8",
+					"letterSpacing": 0.1
+				},
+				"txtBlog": {
+					"type": "input",
+					"top": 272,
+					"left": 454,
+					"width": 170,
+					"height": 16,
+					"dataSource": "\"https://blog.4d.com/\"",
+					"stroke": "#0ea5e9",
+					"textDecoration": "underline",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"fontSize": 11,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/txtBlog.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"txtDocsLink": {
+					"type": "text",
+					"text": ":xliff:StartScreen_LabelIcons",
+					"top": 295,
+					"left": 346,
+					"width": 87,
+					"height": 14,
+					"fontSize": 9,
+					"stroke": "#94A3B8",
+					"fontWeight": "bold"
+				},
+				"cardCtaBg": {
+					"type": "rectangle",
+					"top": 341,
+					"left": 11,
+					"width": 601,
+					"height": 38,
+					"fill": "#ffffff",
+					"stroke": "#e2e8f0",
+					"borderRadius": 10
+				},
+				"txtTagline": {
+					"type": "text",
+					"text": ":xliff:StartScreen_Tagline",
+					"top": 351,
+					"left": 29,
+					"width": 375,
+					"height": 14,
+					"fontSize": 12,
+					"stroke": "#000000",
+					"fontWeight": "normal"
+				},
+				"BtnDemo": {
+					"type": "button",
+					"text": ":xliff:StartScreen_BtnDemo",
+					"top": 346,
+					"left": 412,
+					"width": 194,
+					"action": "Accept",
+					"shortcutKey": "[Return]",
+					"focusable": false,
+					"defaultButton": true,
+					"fill": "#0ea5e9",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderRadius": 8,
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"method": "ObjectMethods/BtnDemo.4dm",
+					"display": true,
+					"class": "default"
+				},
+				"footerTopRule": {
+					"type": "line",
+					"top": 399,
+					"left": 26,
+					"width": 570,
+					"height": 1,
+					"stroke": "#e2e8f0"
+				},
+				"txtVersion": {
+					"type": "text",
+					"text": ":xliff:StartScreen_Footer",
+					"top": 405,
+					"left": 454,
+					"width": 144,
+					"height": 11,
+					"fontSize": 9,
+					"stroke": "#696969",
+					"textAlign": "right"
+				},
+				"txtAPIicon": {
+					"type": "input",
+					"top": 294,
+					"left": 428,
+					"width": 170,
+					"height": 16,
+					"dataSource": "\"https://fonts.google.com/icons\"",
+					"stroke": "#0ea5e9",
+					"textDecoration": "underline",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"fontSize": 11,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/txtAPIicon.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"heroRuleLLeft1": {
+					"type": "line",
+					"top": 70,
+					"left": 93,
+					"width": 40,
+					"height": 1,
+					"stroke": "#7dd3fc"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1464,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

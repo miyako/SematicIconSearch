@@ -68,10 +68,15 @@ def is_code_font(span):
     return any(f in font_of(span) for f in CODE_FONTS)
 
 
-def is_code_line(item, body_x):
-    if any((s["color"] in CODE_COLORS or is_code_font(s)) and s["text"].strip() for s in item["spans"]):
+def is_code_line(item, body_x, in_code=False):
+    """Code-styled spans mark code: all of them (even at the body x), or some of them on an
+    indented line. Indentation alone only continues a code block that has already started."""
+    styled = [(s["color"] in CODE_COLORS or is_code_font(s)) for s in item["spans"] if s["text"].strip()]
+    if styled and all(styled):
         return True
-    return item["x"] >= body_x + CFG["code"]["indent"]
+    if any(styled) and item["x"] != body_x:
+        return True
+    return in_code and item["x"] >= body_x + CFG["code"]["indent"]
 
 
 def is_heading(fonts, size):
@@ -94,7 +99,7 @@ def inline_md(spans):
             trail = t[len(t.rstrip()):]
             t = f"{lead}**{t.strip()}**{trail}"
         out.append(t)
-    return "".join(out)
+    return re.sub(r"\*\*(\s+)\*\*", r"\1", "".join(out))  # **a** **b** -> **a b**
 
 
 def join_lines(lines):
@@ -129,15 +134,26 @@ def code_line_text(item, min_x):
     raw = "".join(s["text"] for s in item["spans"]).rstrip()
     stripped = raw.lstrip(" ")
     spaces = len(raw) - len(stripped)
-    level = spaces // 4 if spaces >= 4 else (1 if item["x"] > min_x + 10 else 0)
-    return "    " * level + stripped
+    if spaces:  # the PDF kept the indentation as spaces: keep it as is
+        return raw
+    return ("    " if item["x"] > min_x + 10 else "") + stripped
 
 
 def extract_body(doc):
     out = []
     cover = CFG["cover"]
     p1 = [it for it in line_items(doc[cover["page"] - 1]) if it["kind"] == "line" and it["text"].strip()]
-    title, *rest = (it["text"].strip() for it in p1[:cover["lines"]])
+    p1 = p1[:cover["lines"]]
+
+    def style(it):
+        s = next(s for s in it["spans"] if s["text"].strip())
+        return font_of(s), round(s["size"], 1)
+
+    n = 1  # a title that wraps onto several lines in the same style is one title
+    while n < len(p1) and style(p1[n]) == style(p1[0]):
+        n += 1
+    title = join_lines(it["text"] for it in p1[:n])
+    rest = [it["text"].strip() for it in p1[n:]]
     out.append(f"# {title}\n\n" + "".join(f"{r}\n\n" for r in rest).rstrip("\n") + "\n")
 
     figures = []
@@ -244,7 +260,7 @@ def extract_body(doc):
                 prev = it
                 continue
 
-            if it["x"] != body_x and is_code_line(it, body_x):
+            if is_code_line(it, body_x, bool(state["code"])):
                 flush_para(); flush_bullets()
                 state["code"].append(it)
                 prev = it
@@ -263,10 +279,50 @@ def extract_body(doc):
     return "\n".join(out), figures
 
 
+def _tesseract_tsv(png_bytes: bytes):
+    return subprocess.run(["tesseract", "stdin", "-", "--psm", str(CFG["ocr"]["psm"]), "tsv"],
+                          input=png_bytes, capture_output=True, check=True).stdout.decode("utf-8", "replace")
+
+
+def _ocr_pass(png: Path, scale: int):
+    """One OCR pass; scale > 1 upscales a contrast-stretched greyscale copy, which finds
+    light text on tinted shapes that the plain pass misses. Boxes are in original pixels."""
+    if scale == 1:
+        return _group_lines(_tesseract_tsv(png.read_bytes()), 1)
+    import io
+    from PIL import Image, ImageOps
+    im = Image.open(png).convert("L")
+    im = ImageOps.autocontrast(im.resize((im.width * scale, im.height * scale), Image.LANCZOS))
+    buf = io.BytesIO()
+    im.save(buf, format="PNG")
+    return _group_lines(_tesseract_tsv(buf.getvalue()), scale)
+
+
+def _overlap(a, b):
+    ax, ay, aw, ah = a; bx, by, bw, bh = b
+    w = min(ax + aw, bx + bw) - max(ax, bx); h = min(ay + ah, by + bh) - max(ay, by)
+    return 0 if w <= 0 or h <= 0 else w * h / min(aw * ah, bw * bh)
+
+
+def _alnum(t):
+    return re.sub(r"[^0-9A-Za-z]", "", t)
+
+
 def ocr_lines(png: Path):
+    lines = _ocr_pass(png, 1)
+    for extra in _ocr_pass(png, 3):
+        hits = [l for l in lines if _overlap(l["box"], extra["box"]) > 0.3]
+        if not hits:
+            lines.append(extra)
+        elif (len(hits) == 1 and len(_alnum(extra["text"])) > len(_alnum(hits[0]["text"]))
+              and _alnum(hits[0]["text"]) in _alnum(extra["text"])):
+            lines[lines.index(hits[0])] = extra  # e.g. "88%" -> "88% Similar"
+    lines.sort(key=lambda l: (l["box"][1] // 10, l["box"][0]))
+    return lines
+
+
+def _group_lines(tsv: str, scale: int):
     ocr = CFG["ocr"]
-    tsv = subprocess.run(["tesseract", str(png), "-", "--psm", str(ocr["psm"]), "tsv"],
-                         capture_output=True, text=True, check=True).stdout
     groups = {}
     for row in tsv.splitlines()[1:]:
         f = row.split("\t")
@@ -274,7 +330,8 @@ def ocr_lines(png: Path):
             continue
         key = (int(f[2]), int(f[3]), int(f[4]))
         groups.setdefault(key, []).append(
-            {"x": int(f[6]), "y": int(f[7]), "w": int(f[8]), "h": int(f[9]), "text": f[11]})
+            {"x": int(f[6]) // scale, "y": int(f[7]) // scale, "w": -(-int(f[8]) // scale),
+             "h": -(-int(f[9]) // scale), "text": f[11]})
     lines = []
     for ws in groups.values():
         ws.sort(key=lambda w: w["x"])
@@ -284,7 +341,6 @@ def ocr_lines(png: Path):
         if not re.search(r"[A-Za-z]{3}|\d", text) or re.search(ocr["noise"], text):
             continue  # arrows, borders and other OCR noise
         lines.append({"box": [x0, y0, x1 - x0, y1 - y0], "text": text})
-    lines.sort(key=lambda l: (l["box"][1] // 10, l["box"][0]))
     return lines
 
 

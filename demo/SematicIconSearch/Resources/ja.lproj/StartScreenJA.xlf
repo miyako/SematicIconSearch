@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="StartScreen" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="StartScreen_Badge" resname="StartScreen_Badge">
+				<source>TECH NOTE</source>
+				<target>テクニカルノート</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Wordmark" resname="StartScreen_Wordmark">
+				<source>SEMANTIC ICON SEARCH</source>
+				<target>セマンティックアイコン検索</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Eyebrow" resname="StartScreen_Eyebrow">
+				<source>HOW IT WORKS</source>
+				<target>しくみ</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_DescTitle" resname="StartScreen_DescTitle">
+				<source>Semantic Search on Icons</source>
+				<target>アイコンのセマンティック検索</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_DescBody" resname="StartScreen_DescBody">
+				<source>This 4D application allows you to perform semantic search on a set of icons (the Material Design icons by Google, available at https://fonts.google.com/icons).  An OpenAI key will be needed in order to transform the text prompt into a vector.  An ORDA query will then retrieve the best vector matches and display a list of icons ranked by similarity to the search prompt.</source>
+				<target>この4Dアプリケーションでは、アイコンのセット（GoogleのMaterial Design Icons、https://fonts.google.com/icons）をセマンティック検索できます。テキストのプロンプトをベクトルに変換するには、OpenAIのキーが必要です。そのあとORDAのクエリで近いベクトルを取得し、検索プロンプトとの類似度の順にアイコンを表示します。</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelVersion" resname="StartScreen_LabelVersion">
+				<source>VERSION</source>
+				<target>バージョン</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelStack" resname="StartScreen_LabelStack">
+				<source>STACK</source>
+				<target>使用技術</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelDocs" resname="StartScreen_LabelDocs">
+				<source>DOCS &amp; BLOG</source>
+				<target>資料・ブログ</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_LabelIcons" resname="StartScreen_LabelIcons">
+				<source>ICONS</source>
+				<target>アイコン</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Tagline" resname="StartScreen_Tagline">
+				<source>No API key needed for pre-vectorized search prompts.</source>
+				<target>ベクトル化済みのプロンプトなら、APIキーは不要です。</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_BtnDemo" resname="StartScreen_BtnDemo">
+				<source>Launch Demo  →</source>
+				<target>デモを起動  →</target>
+			</trans-unit>
+			<trans-unit id="StartScreen_Footer" resname="StartScreen_Footer">
+				<source>4D Tech Note  ·  2026</source>
+				<target>4Dテクニカルノート  ·  2026</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

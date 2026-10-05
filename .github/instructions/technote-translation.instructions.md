@@ -92,6 +92,9 @@ monospace font for code instead of colours, `code.colors` can stay empty.
 - Other languages: agree on the style with the user, and set the fonts (`figure_fonts`) and the font stack in
   `style/style.css`.
 - Inline code (`` `name` ``) stays as is. Identifiers in prose that refer to code stay in their original form.
+- Translator's notes (where the localised demo differs from the original): only with the user's agreement, as a
+  `> **訳注**：…` blockquote after the paragraph concerned. It is the only allowed extra block in `src/<tgt>.md`;
+  it is styled by `blockquote` in `style/style.css`.
 
 ## Figure localisation (`tools/render_figures.py`)
 
@@ -108,6 +111,8 @@ For each changed item:
 5. The text is drawn with the weight (`light`, `regular` or `bold`) and alignment (`center` or `left`).
 
 Overrides per item: `scale`, `size`, `weight`, `align`, `dx`, `dy`, `box`, `bg`, `fg`, `erase_pad`.
+Rotated labels (OCR does not find them; add them by hand): `angle` (degrees, counter-clockwise), `center`,
+`length` and `thickness` (inked extent along and across the baseline, px); `box` is then only used to sample colours.
 Per figure:
 - `"localize": false` copies the image unchanged (use it for screenshots)
 - `"replace": "fig-NN-<tgt>.png"` uses a ready-made image from `figures/`, keeping `width_pt`
